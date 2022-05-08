@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <!-- fonts-------------------------------------------------------->
     <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
 </head>
 
 <body>
@@ -205,30 +209,32 @@
             <div class="container">
                 <div class="section-four_wrapper  d-flex flex-column">
                     <h2 class="section-four_title">All platform connect to Findtrend</h2>
-                    <div class="section-four_networks justify-between d-none">
-                        <div class="section-four_network align-center d-flex">
-                            <a href="#"><img src="img/main/section5/network/facebook.png" alt=""></a>
-                        </div>
-                        <div class="section-four_network align-center d-flex">
-                            <a href="#"><img src="img/main/section5/network/twitter.png" alt=""></a>
-                        </div>
-                        <div class="section-four_network align-center d-flex">
-                            <a href="#"><img src="img/main/section5/network/ball.png" alt=""></a>
-                        </div>
-                        <div class="section-four_network align-center d-flex">
-                            <a href="#"><img src="img/main/section5/network/pinterest.png" alt=""></a>
-                        </div>
-                        <div class="section-four_network align-center d-flex">
-                            <a href="#"><img src="img/main/section5/network/medium.png" alt=""></a>
-                        </div>
-                        <div class="section-four_network align-center d-flex">
-                            <a href="#"><img src="img/main/section5/network/reddit.png" alt=""></a>
-                        </div>
-                        <div class="section-four_network align-center d-flex">
-                            <a href="#"><img src="img/main/section5/network/vkontakte.png" alt=""></a>
-                        </div>
-                        <div class="section-four_network align-center d-flex">
-                            <a href="#"><img src="img/main/section5/network/linkedin.png" alt=""></a>
+                    <div class="swiper">
+                        <div class="section-four_networks swiper-wrapper">
+                            <div class="section-four_network align-center d-flex swiper-slide">
+                                <a href="#"><img src="img/main/section5/network/facebook.png" alt=""></a>
+                            </div>
+                            <div class="section-four_network align-center d-flex swiper-slide">
+                                <a href="#"><img src="img/main/section5/network/twitter.png" alt=""></a>
+                            </div>
+                            <div class="section-four_network align-center d-flex swiper-slide">
+                                <a href="#"><img src="img/main/section5/network/ball.png" alt=""></a>
+                            </div>
+                            <div class="section-four_network align-center d-flex swiper-slide">
+                                <a href="#"><img src="img/main/section5/network/pinterest.png" alt=""></a>
+                            </div>
+                            <div class="section-four_network align-center d-flex swiper-slide">
+                                <a href="#"><img src="img/main/section5/network/medium.png" alt=""></a>
+                            </div>
+                            <div class="section-four_network align-center d-flex swiper-slide">
+                                <a href="#"><img src="img/main/section5/network/reddit.png" alt=""></a>
+                            </div>
+                            <div class="section-four_network align-center d-flex swiper-slide">
+                                <a href="#"><img src="img/main/section5/network/vkontakte.png" alt=""></a>
+                            </div>
+                            <div class="section-four_network align-center d-flex swiper-slide">
+                                <a href="#"><img src="img/main/section5/network/linkedin.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="section-four_image">
@@ -338,7 +344,11 @@
             </div>
         </footer>
     </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 5
+        });
         var isMobileMenuOpened = false;
         var menuButton = document.querySelector('.header_humburger_btn');
         var mobileMenu = document.querySelector('.hamburger-menu-backdrop');

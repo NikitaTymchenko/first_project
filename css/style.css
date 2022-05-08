@@ -283,6 +283,14 @@ body {
     font-size: 20px;
 }
 
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 64px;
+}
+
 .section-one_networks-size {
     background: #181818;
     width: 295px;
