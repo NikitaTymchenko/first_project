@@ -37,14 +37,17 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 /* ----------------------------------------------------------------------- */
+
 @font-face {
     font-family: 'Effra';
     src: url('../fonts/effta/Effra-Bold.eot');
 }
+
 @font-face {
     font-family: 'Effra';
     src: url('../fonts/effta/Effra-Bold.ttf');
 }
+
 @font-face {
     font-family: 'Effra';
     src: url('../fonts/effta/Effra-Bold.woff');
@@ -106,6 +109,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     font-family: 'GoodDog';
     src: url('../fonts/gooddognew.ttf');
 }
+
 /* FONTS------------------------------------------------------------------- */
 
 body {
@@ -140,9 +144,7 @@ body {
 .header {
     height: 100px;
 }
-/* .logo {
-    margin: 24px 0 ;
-} */
+
 .header_navigation {
     margin: 32px 0;
 }
