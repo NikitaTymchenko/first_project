@@ -15,11 +15,16 @@
         href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
         />
 </head>
-
+<!--названия классов должны быть осмысленными-->
+<!--это сейчас у нас section-three - третья по счету-->
+<!--а если поменяется порядок? добавятся секции? придет новый дизайн?-->
 <body>
     <header class="header">
         <div class="container h-100pc justify-between d-flex align-center">
             <div class="logo">
+<!--                ссылка по высоте меньше, чем тот блок что она оборачивает, и меньше высоты родительского блока-->
+<!--                в принципе, тут ничего страшного, но могут быть ситуации, когда порвет верстку-->
+<!--                надо исправить-->
                 <a href="#"><img src="img/header/Vector.svg" alt=""></a>
             </div>
             <nav class="header_navigation">
@@ -54,8 +59,11 @@
                         tabs.
                         Findtrend let you gathers all of your favorite website into one place.</p>
                 </div>
+<!--                Нижний марджин тут не нужен-->
                 <button class="section-one_button">Get Started 🔥</button>
                 <div class="section-one_networks">
+<!--                    У этих секций есть и высота и верхний паддинг. Что то явно лишнее. Тут достаточно сделать высоту и-->
+<!--                    флексами выровнять все внутри, или не задавать высоту и выровнять паддингами -->
                     <div class="section-one_twitter section-one_networks-size d-flex">
                         <span class="section-one_networks-icon_info section-one_twitter-bg"></span>
                         <p>Cryptopunk - Search</p>
@@ -76,8 +84,14 @@
             </div>
         </section>
         <section class="section-two">
+<!--            у контейнера опять max-width. Это опасно, что будет если контент будет по ширине меньше, чем желаемый контейнер?-->
+<!--            верстка не должна разваливаться, и не должно быть вероятности того, что она развалится-->
             <div class="container">
+<!--                у нас тут и паддинги, и марджины. Зачем? Тут достаточно чего то одного, если вертикальные марджины не -->
+<!--                схлопнутся - тогда они, если схлопываются - то паддинги-->
                 <h2 class="section-two_title">Open new tabs is sh*t </h2>
+<!--                внизу у стрелочных блоков задаются нижние марджины, чтобы отоднвинуть section-two_paragraph вниз-->
+<!--                правильнее сделать эти марджины (а лучше паддинги) для общего блока-обертки section-two_block-->
                 <div class="section-two_block">
                     <div class="section-two_block_arrow-top flex-column d-flex">
                         <p class="section-two_arrow-top_text">You just need one tab now</p>
@@ -96,17 +110,21 @@
                         <p>solution for discover a trend</p>
                     </div>
                 </div>
+<!--                тут не div, a p-->
                 <div class="section-two_paragraph">A solution for your browser tabs and don’t make your device get
                     slower over time. Get ease and faster to discover a trend with just one tab.</div>
             </div>
         </section>
         <section class="section-three">
             <div class="container">
+<!--                тут не div, a p-->
                 <div class="section-three_text">Findtrend helps you to increase your
                     productivity and reduce your computer's
                     memory load, <span class="section-three_text-gray">an application that can
                         fulfill your daily browsing needs.</span></div>
                 <h3 class="section-three_title">Findtrend make +1000 Startup grow</h3>
+<!--                секции-карточки сайтов не посредине-->
+<!--                подозреваю, что такой дизайн, но тут вопросы к дизайнеру, и нам все равно придется сделать, что бы было красиво-->
                 <div class="section-three_websites d-flex">
                     <div class="section-three_website   "><a href="#">
                             <div class="section-three_website-image">
@@ -251,6 +269,8 @@
                 <h2 class="section-five_title">Get your best deal</h2>
                 <div class="section-five_button align-center d-flex">
                     <div class="section-five_button-left_text">Monthly </div>
+<!--                    здесь надо тоггл сделать по другому, но это сделаем тогда когда прикрутим дж эс-->
+<!--                    иначе будет не понятно пока-->
                     <div class="section-five_toggle">
                         <img src="img/main/section5/toggle.svg" alt="">
                     </div>
@@ -324,10 +344,15 @@
                     </div>
             </div>
         </section>
+<!--        футер не должен быть в мейне - это отдельный самостоятельный блок-->
         <footer class="footer">
+<!--            этот блок не работает - стили не применены, почему?-->
             <div class="conteiner">
                 <div class="footer_wrapper d-flex flex-column align-center">
                     <div class="footer_logo">
+<!--                        ссылка по высоте меньше, чем тот блок что она оборачивает, и меньше высоты родительского блока-->
+<!--                        в принципе, тут ничего страшного, но могут быть ситуации, когда порвет верстку-->
+<!--                        надо исправить-->
                         <a href="/">
                             <img src="img/footer/logo.png" alt="">
                         </a>
