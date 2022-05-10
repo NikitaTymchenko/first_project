@@ -3,7 +3,7 @@
     margin: 0;
     border: 0;
 }
-*,*:before,*after{
+*,*:before,*:after{
     -moz-box-sizing: border-box;
     -webkit-box-sizing:border-box;
     box-sizing: border-box;
@@ -121,7 +121,7 @@ body {
 }
 
 .container {
-    max-width: 100%;
+    width: 100%;
     padding: 0 18px;
 }
 
@@ -143,6 +143,16 @@ body {
 
 .header {
     height: 100px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo__link {
+    display: block;
+    height: 40px;
 }
 
 .header_navigation {
@@ -273,8 +283,6 @@ body {
     border-radius: 40px;
     background: #A8FF35;
     font-weight: 700;
-    margin-bottom: 72px;
-    margin-bottom: 450px;
 }
 
 .section-one_networks {
@@ -294,8 +302,7 @@ body {
 .section-one_networks-size {
     background: #181818;
     width: 295px;
-    height: 45px;
-    padding-top: 25px;
+    padding: 20px 0;
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.8);
 }
 
@@ -337,15 +344,15 @@ body {
 .section-one_printerest {
     position: absolute;
     left: 38px;
-    top: 550px;
+    top: 545px;
     transform: rotate(2deg);
     z-index: 2;
 }
 
 .section-one_facebook {
     position: absolute;
-    left: 35px;
-    top: 612px;
+    left: 38px;
+    top: 605px;
     transform: rotate(-2deg);
     z-index: 1;
 }
@@ -353,12 +360,13 @@ body {
 .section-one_ball {
     position: absolute;
     left: 40px;
-    top: 685px;
+    top: 673px;
     transform: rotate(4deg);
 }
 
 .section-two {
     background: #A8FF35;
+    padding: 80px 0;
 }
 
 .section-two_title {
@@ -366,7 +374,10 @@ body {
     font-size: 36px;
     line-height: 112%;
     margin-bottom: 30px;
-    padding-top: 80px;
+}
+
+.section-two_block {
+    padding-bottom: 35px;
 }
 
 .section-two_block_arrow-top {
@@ -423,12 +434,12 @@ body {
     font-size: 12px;
     position: relative;
     top: -20px;
-    margin-bottom: 35px;
 }
+
 .section-two_paragraph {
     text-align: center;
     line-height: 150%;
-    padding: 0 20px 80px;  
+    padding: 0 20px;  
 }
 
 .section-three {
@@ -465,12 +476,8 @@ body {
 .section-three_website {
     background: #f5f5f5;
     border-radius: 8px;
-    margin: 0 7px 7px 0;
+    margin-bottom: 15px;
     padding: 22px 23px;
-}
-
-.section-three_website:nth-child(even) {
-    margin-right: 0;
 }
 
 .section-four {
@@ -794,11 +801,21 @@ body {
     margin-bottom: 40px;
 }
 
+.footer_logo__link {
+    display: block;
+    width: 170px;
+    height: 41px;
+}
+
 .footer_navigation {
     text-align: center;
     font-size: 18px;
 }
 
-.footer_navigation li {
+.footer_navigation__item {
     margin-top: 40px;
+}
+
+.footer_navigation__link {
+    color: #000;
 }
