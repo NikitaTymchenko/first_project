@@ -10,26 +10,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <!-- fonts-------------------------------------------------------->
     <link rel="stylesheet" href="css/style.css">
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-        />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
+
 <body>
     <header class="header">
         <div class="container h-100pc justify-between d-flex align-center">
-            <div class="logo">
-                <a class="logo__link" href="#"><img src="img/header/Vector.svg" alt=""></a>
-            </div>
-            <nav class="header_navigation">
-            </nav>
-            <div class="header_humburger_btn_wrapper">
-                <button class="header_humburger_btn header_humburger_btn--collapsed"></button>
-            </div>
+                <div class="logo ">
+                    <a class="logo__link" href="#">
+                        <div class="logo__wrapper align-center d-flex">
+                            <img src="img/header/Vector.svg" alt="">
+                            <span class="logo__text d-none">Findtrend</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__navigation d-none">
+                    <div class="header__navigation--wrapper justify-between d-flex">
+                        <nav class="navigation__menu  d-flex">
+                            <ul class="header-navigation__list d-flex ">
+                                <li><a href="#" class="nav-link">About</a></li>
+                                <li><a href="#" class="nav-link">How it works</a></li>
+                                <li><a href="#" class="nav-link">Pricing</a></li>
+                                <li><a href="#" class="nav-link">Solution</a></li>
+                                <li><a href="#" class="nav-link">Features</a></li>
+                            </ul>
+                        </nav>
+                        <div class="navigation__buttons d-flex align-center justify-between">
+                            <button type="button" class="button-login">Login</button>
+                            <button type="button" class="button-Register">Register</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_humburger_btn_wrapper">
+                    <button class="header_humburger_btn header_humburger_btn--collapsed"></button>
+                </div>
         </div>
         <div class="hamburger-menu-backdrop d-none">
             <nav class="hamburger-menu">
-                <ul class="header_navigation">
+                <ul class="header-hamburger_navigation">
                     <li><a href="#" class="nav-link">About</a></li>
                     <li><a href="#" class="nav-link">How it works</a></li>
                     <li><a href="#" class="nav-link">Pricing</a></li>
@@ -53,7 +71,15 @@
                         tabs.
                         Findtrend let you gathers all of your favorite website into one place.</p>
                 </div>
-                <button class="section-one_button">Get Started 🔥</button>
+                <div class="section-one__button--wrapper d-flex">
+                    <button class="section-one_button">Get Started 🔥</button>
+                    <div class="section-one__arrow d-none">
+                        <div class="section-one__arrow--wrapper d-flex flex-column">
+                            <p class="section-one__arrow--text">All research start from here</p>
+                            <img class="section-one__arrow--img" src="img/main/section1/Arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
                 <div class="section-one_networks">
                     <div class="section-one_twitter section-one_networks-size d-flex">
                         <span class="section-one_networks-icon_info section-one_twitter-bg"></span>
@@ -77,11 +103,13 @@
         <section class="section-two">
             <div class="container">
                 <h2 class="section-two_title">Open new tabs is sh*t </h2>
-                <div class="section-two_block">
-                    <div class="section-two_block_arrow-top flex-column d-flex">
+                <div class="section-two--wrapper d-flex flex-column">
+                    <div class="section-two_block">
+                        <div class="section-two_block_arrow-top flex-column d-flex">
                         <p class="section-two_arrow-top_text">You just need one tab now</p>
                         <div class="section-arrow">
-                            <img src="img/arrows/Arrow_top.png" alt="">
+                            <img class="one_tab_now-arrow--mobile" src="img/arrows/Arrow_top.png" alt="">
+                            <img class="one_tab_now-arrow--desktop d-none" src="img/arrows/Arrow_bottom.png" alt="">
                         </div>
                     </div>
                     <div class="section-two_block_content justify-center d-flex">
@@ -91,12 +119,13 @@
                         </div>
                     </div>
                     <div class="section-two_block_arrow-bottom">
-                        <img src="img/arrows/Arrow_bottom.png" alt="">
-                        <p>solution for discover a trend</p>
+                        <img class="solution-arrow" src="img/arrows/Arrow_bottom.png" alt="">
+                        <p class="section-two_arrow-bottom_text">solution for discover a trend</p>
                     </div>
                 </div>
                 <p class="section-two_paragraph">A solution for your browser tabs and don’t make your device get
                     slower over time. Get ease and faster to discover a trend with just one tab.</p>
+                </div>
             </div>
         </section>
         <section class="section-three">
@@ -107,99 +136,67 @@
                         fulfill your daily browsing needs.</span></p>
                 <h3 class="section-three_title">Findtrend make +1000 Startup grow</h3>
                 <div class="section-three_websites justify-between d-flex">
-                    <div class="section-three_website   "><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/Microsoft.png" alt="">
-                            </div>
+                    <div class="section-three_website"><a href="#">
+                                <img class="section-three_website-image" src="img/main/section4/Microsoft.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/allianz.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/allianz.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/upwork.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/upwork.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/volvo.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/volvo.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image ">
-                                <img src="img/main/section4/grab.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/grab.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/verizon.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/verizon.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/coinbase.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/coinbase.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/expedia.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/expedia.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/Airtable.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/Airtable.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/magento.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/magento.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/carrera.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/carrera.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/bonanza.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/bonaza.svg" alt="">
                         </a></div>
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/wetransfer.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/wetransfer.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/suzuki.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/suzuki.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/algolia.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/algolia.svg" alt="">
                         </a></div>
 
                     <div class="section-three_website"><a href="#">
-                            <div class="section-three_website-image">
-                                <img src="img/main/section4/heineken.png" alt="">
-                            </div>
+                                <img class="section-three_website-image" src="img/main/section4/heineken.svg" alt="">
                         </a></div>
                 </div>
             </div>
@@ -211,35 +208,60 @@
                     <div class="swiper">
                         <div class="section-four_networks swiper-wrapper">
                             <div class="section-four_network align-center d-flex swiper-slide">
-                                <a href="#"><img src="img/main/section5/network/facebook.png" alt=""></a>
+                                <a href="#"><img class="swiper__img" src="img/main/section5/network/facebook.svg" alt=""></a>
                             </div>
                             <div class="section-four_network align-center d-flex swiper-slide">
-                                <a href="#"><img src="img/main/section5/network/twitter.png" alt=""></a>
+                                <a href="#"><img class="swiper__img" src="img/main/section5/network/twitter.svg" alt=""></a>
                             </div>
                             <div class="section-four_network align-center d-flex swiper-slide">
-                                <a href="#"><img src="img/main/section5/network/ball.png" alt=""></a>
+                                <a href="#"><img class="swiper__img" src="img/main/section5/network/ball.svg" alt=""></a>
                             </div>
                             <div class="section-four_network align-center d-flex swiper-slide">
-                                <a href="#"><img src="img/main/section5/network/pinterest.png" alt=""></a>
+                                <a href="#"><img class="swiper__img" src="img/main/section5/network/pinterest.svg" alt=""></a>
                             </div>
                             <div class="section-four_network align-center d-flex swiper-slide">
-                                <a href="#"><img src="img/main/section5/network/medium.png" alt=""></a>
+                                <a href="#"><img class="swiper__img" src="img/main/section5/network/medium.svg" alt=""></a>
                             </div>
                             <div class="section-four_network align-center d-flex swiper-slide">
-                                <a href="#"><img src="img/main/section5/network/reddit.png" alt=""></a>
+                                <a href="#"><img class="swiper__img" src="img/main/section5/network/reddit.svg" alt=""></a>
                             </div>
                             <div class="section-four_network align-center d-flex swiper-slide">
-                                <a href="#"><img src="img/main/section5/network/vkontakte.png" alt=""></a>
+                                <a href="#"><img class="swiper__img" src="img/main/section5/network/vkontakte.svg" alt=""></a>
                             </div>
                             <div class="section-four_network align-center d-flex swiper-slide">
-                                <a href="#"><img src="img/main/section5/network/linkedin.png" alt=""></a>
+                                <a href="#"><img class="swiper__img" src="img/main/section5/network/linkedin.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
-                    <div class="section-four_image">
-                        <img src="img/main/section5/tweets/tweet_1.svg" alt="">
-                        <img src="img/main/section5/tweets/tweet_2.svg" alt="">
-                        <img src="img/main/section5/tweets/tweet_3.svg" alt="">
+                    <div class="section-four__desktop-networks align-center justify-between d-none">
+                        <div class="section-four_network">
+                            <a href="#"><img src="img/main/section5/network/facebook.svg" alt=""></a>
+                        </div>
+                        <div class="section-four_network">
+                            <a href="#"><img src="img/main/section5/network/twitter.svg" alt=""></a>
+                        </div>
+                        <div class="section-four_network">
+                            <a href="#"><img src="img/main/section5/network/ball.svg" alt=""></a>
+                        </div>
+                        <div class="section-four_network">
+                            <a href="#"><img src="img/main/section5/network/pinterest.svg" alt=""></a>
+                        </div>
+                        <div class="section-four_network">
+                            <a href="#"><img src="img/main/section5/network/medium.svg" alt=""></a>
+                        </div>
+                        <div class="section-four_network">
+                            <a href="#"><img src="img/main/section5/network/reddit.svg" alt=""></a>
+                        </div>
+                        <div class="section-four_network">
+                            <a href="#"><img src="img/main/section5/network/vkontakte.svg" alt=""></a>
+                        </div>
+                        <div class="section-four_network">
+                            <a href="#"><img src="img/main/section5/network/linkedin.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="section-four_image d-flex flex-column align-center">
+                        <img class="section-four__tweet--radiation-risk" src="img/main/section5/tweets/tweet_1.svg" alt="">
+                        <img class="section-four__tweet--mask-and-tesla" src="img/main/section5/tweets/tweet_2.svg" alt="">
                     </div>
                     <button class="section-four_button">View More Trend</button>
                 </div>
@@ -254,13 +276,18 @@
                         <img src="img/main/section5/toggle.svg" alt="">
                     </div>
                     <div class="section-five_button-right_text">Yearly</div>
+                    <div class="section-five__arrow-desktop d-none">
+                        <div class="section-five__arrow--text">Save 10% per month</div>
+                        <img class="section-five__arrow-desktop--img" src="img/main/section6/Arrow_desk.svg" alt="">
+                    </div>
                 </div>
-                <div class="section-five_button-arrow ">
-                    <img src="img/main/section6/Arrow.png" alt="">
-                    <div class="section-five_button-arrow-text">Save 10% per month</div>
+                <div class="section-five__arrow-mobile">
+                    <img class="section-five__arrow-mobile-img" src="img/main/section6/Arrow_mob.png" alt="">
+                    <div class="section-five__arrow--text">Save 10% per month</div>
                 </div>
-                <div class="section-five_personal">
-                    <div class="section-five_card-container">
+                <div class="section-five__cards">
+                    <div class="section-five__white-card">
+                        <div class="section-five_card-container">
                         <h3 class="section-five_personal-main_title">Personal</h3>
                         <p class="section-five_personal-title">Special first packet for all</p>
                         <hr class="section-five_personal-line">
@@ -275,7 +302,7 @@
                         <button class="section-five_personal_button">Start Free Trial</button>
                     </div>
                 </div>
-                <div class="section-five_regular">
+                <div class="section-five__green-card">
                     <div class="section-five_card-container">
                         <h3 class="section-five_regular-main_title">Regular</h3>
                         <p class="section-five_regular-title">Recommended for personal pro</p>
@@ -292,9 +319,9 @@
                         <button class="section-five_regular_button">Start Free Trial</button>
                     </div>
                 </div>
-                <div class="section-five_personal-mvp">
+                <div class="section-five__white-card">
                     <div class="section-five_card-container">
-                        <h3 class="section-five_personal-mvp-main_title">Personal</h3>
+                    <h3 class="section-five_personal-mvp-main_title">Personal</h3>
                         <p class="section-five_personal-mvp-title">Special first packet for all</p>
                         <hr class="section-five_personal-mvp-line">
                         <div class="section-five_price">$48<span>/Month</span></div>
@@ -310,39 +337,43 @@
                         </div>
                         <button class="section-five_personal-mvp_button">Start Free Trial</button>
                     </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            </div>
         </section>
         <section class="section-six">
             <div class="container">
                 <div class="section-six_wrapper flex-column align-center d-flex">
                     <p class="section-six_text">Join us on email for
                         <span>more trending topics</span></p>
-                        <button class="section-six_button">Join Now</button>
-                    </div>
-            </div>
-        </section>
-</main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer_wrapper d-flex flex-column align-center">
-                    <div class="footer_logo">
-                        <a class="footer_logo__link" href="/">
-                            <img src="img/footer/logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class="footer_navigation">
-                        <ul>
-                            <li class="footer_navigation__item"><a class="footer_navigation__link" href="#">Privacy Policy</a></li>
-                            <li class="footer_navigation__item"><a class="footer_navigation__link" href="#">Terms and Conditions</a></li>
-                            <li class="footer_navigation__item"><a class="footer_navigation__link" href="#">Contact Us</a></li>
-                            <li class="footer_navigation__item"><a class="footer_navigation__link" href="#">Careers</a></li>
-                        </ul>
-                    </div>
+                    <button class="section-six_button">Join Now</button>
                 </div>
             </div>
-        </footer>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper d-flex">
+                <div class="footer_logo">
+                    <a class="footer_logo__link" href="/">
+                        <img src="img/footer/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="footer_navigation">
+                    <ul class="footer_navigation__list">
+                        <li class="footer_navigation__item"><a class="footer_navigation__link" href="#">Privacy
+                                Policy</a></li>
+                        <li class="footer_navigation__item"><a class="footer_navigation__link" href="#">Terms and
+                                Conditions</a></li>
+                        <li class="footer_navigation__item"><a class="footer_navigation__link" href="#">Contact Us</a>
+                        </li>
+                        <li class="footer_navigation__item"><a class="footer_navigation__link" href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper', {
