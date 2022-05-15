@@ -121,7 +121,14 @@ body {
 
 .container {
     width: 100%;
-    padding: 0 18px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
 }
 
 .justify-between {
@@ -144,6 +151,13 @@ body {
 
 .header {
     height: 100px;
+    padding: 25px 0;
+}
+
+@media (min-width: 1200px) {
+    .header {
+        padding: 0;
+    }
 }
 
 .logo {
@@ -255,6 +269,13 @@ body {
     margin-bottom: 40px;
 }
 
+@media screen and (min-width: 1400px) {
+    .header-inner {
+        margin: 0 -60px;
+        height: 100px;
+    }
+}
+
 .nav-link {
     color: #fff;
     font-size: 18px;
@@ -338,9 +359,11 @@ body {
 }
 
 .section-one_networks {
+    width: 100%;
     color: #fff;
     font-family: 'roboto', sans-serif;
     font-size: 20px;
+    position: relative;
 }
 
 .swiper {
@@ -390,35 +413,67 @@ body {
     background-size: contain;
 }
 
+.section-one__button--wrapper {
+    padding-bottom: 50px;
+}
+
 .section-one_twitter {
     position: absolute;
-    left: 35px;
-    top: 480px;
+    left: 0;
+    top: 0;
     transform: rotate(-4deg);
     z-index: 3;
 }
 
+@media (min-width: 1200px) {
+    .section-one_twitter {
+        left: 0;
+        top: 0;
+    }
+}
+
 .section-one_printerest {
     position: absolute;
-    left: 38px;
-    top: 545px;
+    left: 0;
+    top: 70px;
     transform: rotate(2deg);
     z-index: 2;
 }
 
+@media (min-width: 1200px) {
+    .section-one_printerest {
+        left: 170px;
+        top: 55px;
+    }
+}
+
 .section-one_facebook {
     position: absolute;
-    left: 38px;
-    top: 605px;
+    left: 0;
+    top: 140px;
     transform: rotate(-2deg);
     z-index: 1;
 }
 
+@media (min-width: 1200px) {
+    .section-one_facebook {
+        left: 450px;
+        top: 0;
+    }
+}
+
 .section-one_ball {
     position: absolute;
-    left: 40px;
-    top: 673px;
+    left: 0;
+    top: 210px;
     transform: rotate(4deg);
+}
+
+@media (min-width: 1200px) {
+    .section-one_ball {
+        left: 720px;
+        top: 55px;
+    }
 }
 
 .section-two {
@@ -868,6 +923,12 @@ body {
     height: 41px;
 }
 
+@media screen and (min-width: 1400px) {
+    .footer-inner {
+        margin: 30px -40px 0 -60px;
+    }
+}
+
 .footer_navigation {
     text-align: center;
     font-size: 18px;
@@ -882,11 +943,6 @@ body {
 }
 
 @media (min-width: 1400px) {
-    .container {
-        width: 1320px;
-        padding: 0;
-        margin: 0 auto;
-    }
 
     .logo {
         min-width: 170px;
@@ -938,9 +994,6 @@ body {
         display: block;
     }
 
-    .section-one_networks {
-        display: inline;
-    }
 
     .section-one_networks-size {
         font-size: 24px;
@@ -949,25 +1002,7 @@ body {
         height: 82px;
     }
 
-    .section-one_twitter {
-        left: 386px;
-        top: 654px;
-    }
 
-    .section-one_printerest {
-        left: 570px;
-        top: 715px;
-    }
-    
-    .section-one_facebook {
-        left: 840px;
-        top: 660px;
-    }
-    
-    .section-one_ball {
-        left: 1105px;
-        top: 713px;
-    }
 
     .section-one_networks-icon_info {
         width: 32px;
@@ -1062,10 +1097,6 @@ body {
         padding-bottom: 80px;
     }
 
-    .section-three_websites {
-        padding: 0 75px;
-    }
-
     .section-three_website {
         width: 266px;
         height: 120px;
@@ -1132,7 +1163,7 @@ body {
     .section-five_button {
         width: 425px;
         justify-content: space-between;
-        margin: 0 0 40px 480px;
+        margin: 0 auto  40px;
     }
 
     .section-five_button-left_text {
@@ -1162,7 +1193,7 @@ body {
 
     .section-five__cards {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .section-five__white-card {
@@ -1196,6 +1227,7 @@ body {
     .footer_wrapper {
         flex-direction: row;
         justify-content: space-between;
+        align-items: stretch;
         height: 41px;
     }
 
